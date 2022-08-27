@@ -1,0 +1,355 @@
+@import "_zero.scss";
+
+body{
+    background-color: #0b1d26;
+    font-family: 'Gilroy';
+    background-image: url(../img/bg/bg.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+
+// =============NAVIGATION===============
+
+.navigation a{
+    color: #ffffff;
+}
+.navigation  {
+    margin-top: 64px;
+
+
+
+    .container--wide {
+        max-width: 1760px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 200px;
+    }
+
+    &__logo {
+        color: #ffffff;
+        font-size: 24px;
+        font-family: 'Playfair Display', serif;
+    }
+
+    &__item { 
+    }
+
+    &__item ul{
+        display: flex;
+
+         li{
+            padding-left: 40px;
+         }
+            a:active{
+                color: #fbd784;
+            }
+    }
+
+
+
+    &__account {
+        display: flex;
+        align-items: center;
+    }
+
+    &__account--ico {
+    
+    }
+
+    &__account--link {
+        padding-left: 8px;
+
+         a:active{
+            color: #fbd784;
+        }
+    }
+}
+
+
+
+/* ================= HERO==================== */
+
+.hero {
+
+    &__box {
+
+    }
+
+    &__guide {
+        font-size: 18px;
+        color: #fbd784;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        position: relative;
+        padding-left: 100px;
+    }
+    &__guide::before {
+        display:block;
+        content: "";
+        width: 72px;
+        height: 2px;
+        background-color: #fbd784;
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+
+
+    &__title {
+        font-size: 86px;
+        color: #ffffff;
+        font-family: 'Playfair Display', sans-serif;
+        text-transform: capitalize;
+
+    }
+
+    &__scroll {
+        display: flex;
+        padding-top: 50px;
+    }
+
+    &__scroll--text {
+        color: #ffffff;
+        line-height: 24px;
+        font-size: 18px;
+        padding-right: 15px;
+    }
+
+    &__scroll--ico {
+    }
+}
+.container--hero {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 980px;
+    padding: 0 15px;
+    padding-bottom: 840px;
+}
+
+/* =================================CONTENT======================= */
+.content {
+
+
+
+    &__box {
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center ;
+        max-height: 720px;
+        margin-bottom: 200px;
+    }
+    .box__rewers{
+        flex-direction: row-reverse;
+        padding-left: 60px;
+    }
+
+
+
+
+    &__items {
+        max-width: 632px;
+        margin-left: 150px;
+        margin-right: 114px;
+    }
+
+
+    &__title--small{
+            font-size: 18px;
+            color: #fbd784;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            position: relative;
+            padding-left: 100px;
+            padding-bottom: 27px;
+        }
+        &__title--small::before {
+            display:block;
+            content: "";
+            width: 72px;
+            height: 2px;
+            background-color: #fbd784;
+            position: absolute;
+            top: 20%;
+            left: 0;
+        }
+
+    &__title {
+        position: relative;
+        font-size: 64px;
+        font-weight: 600;
+        margin-bottom: 27px;
+    }
+    .numbone::before{
+        content: '01';
+        position: absolute;
+        display: block;
+        max-width: 240px;
+        max-height: 240px;
+        font-size: 240px;
+        top: -158px;
+        left: -150px;
+        color: #ffffff34;
+    }
+    .numbtwo::before{
+        content: '02';
+        position: absolute;
+        display: block;
+        max-width: 240px;
+        max-height: 240px;
+        font-size: 240px;
+        top: -158px;
+        left: -150px;
+        color: #ffffff34;
+    }
+    .numbthree::before{
+        content: '03';
+        position: absolute;
+        display: block;
+        max-width: 240px;
+        max-height: 240px;
+        font-size: 240px;
+        top: -158px;
+        left: -150px;
+        color: #ffffff34;
+    }
+
+
+    &__text {
+        font-family: 'Gilroy';
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.78;
+        margin-bottom: 50px;
+    }
+
+    &__readmore {
+        display: flex;
+        align-items: center;
+    }
+
+    &__readmore--text {
+        font-size: 18px;
+        font-weight: bold;
+        padding-right: 13px;
+        color: #fbd784;
+    }
+
+    &__readmore--img {
+        max-width: 24px;
+        max-height: 16px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+    &__img img {
+
+        max-width: 566px;
+        max-height: 720px;
+    }
+    
+
+}
+.container--content {
+    max-width: 1462px;
+    margin: 0 229px;
+}
+
+//======== FOOTER========
+
+.footer {
+    max-width: 1462px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+
+    .container--footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__copyright {
+        flex: 50%;
+    }
+
+    &__link {
+        flex: 50%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.copyright {
+
+    &__logo {
+        color: #ffffff;
+        font-size: 24px;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        color: #ffffff;
+        font-size: 18px;
+        margin-bottom: 100px;
+        max-width: 300px;
+    }
+
+    &__copyright {
+        color: #ffffff;
+        font-size: 18px;
+        opacity: 50%;
+
+    }
+}
+
+.links {      
+
+    &__blog {
+        color: #fbd784;
+    }
+
+    &__logo {
+        margin-bottom: 24px;
+        color: #fbd784;
+        font-size: 24px;
+    }
+
+    &__mntn {
+        margin-bottom: 16px;
+
+    }
+
+    &__mntn ul li a  {
+        color: #ffffff;
+        padding-bottom: 16px;
+
+    }
+    &__blog ul li a{
+        color: #ffffff;
+        padding-bottom: 16px;
+    }
+
+    &__mntn ul li {
+
+        padding-bottom: 16px;
+
+    }
+    &__blog ul li {
+
+        padding-bottom: 16px;
+    }
+
+}
