@@ -1,3 +1,48 @@
+.footer, .navigation, .hero{
+    display: none;
+}
 
+@media (max-width: 1200px) {
+    .hero__title{
+        font-size: 70px;
+    }
+}
 
-@media ()
+@media (max-width: 800px) {
+    .navigation__item, .navigation__account, .footer{
+
+    }
+
+    .navigation__button--mobile{
+        display: block;
+    }
+    .mobile__nav--active{
+        display: block;
+    }
+    .hero__title{
+        font-size: 40px;
+    }
+    .hero__guide::before{
+        width: 42px;
+    }
+    .hero__guide{
+        font-size: 14px;
+        padding-left: 62px;
+    }
+    .container--hero {
+        padding-bottom: 300px;
+    }
+    .content__box{
+        max-width: 432px;
+        flex-wrap: wrap;
+    }
+    .content__items{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+}
+
+@media (max-width: ) {
+
+}

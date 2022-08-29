@@ -138,12 +138,100 @@ body {
           align-items: center;
 }
 
-.navigation__account--link {
-  padding-left: 8px;
+.navigation__account--ico {
+  padding-right: 8px;
 }
 
 .navigation__account--link a:active {
   color: #fbd784;
+}
+
+.navigation__button--mobile {
+  z-index: 9;
+  display: none;
+  height: 25px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: none;
+}
+
+.navigation__button--icon {
+  display: inline-block;
+  position: relative;
+  background-color: #ffffff;
+  width: 42px;
+  height: 4px;
+  border: none;
+}
+
+.navigation__button--icon::before {
+  display: inline-block;
+  content: '';
+  width: 42px;
+  height: 4px;
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  background-color: #ffffff;
+}
+
+.navigation__button--icon::after {
+  display: inline-block;
+  content: '';
+  width: 42px;
+  height: 4px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  background-color: #ffffff;
+}
+
+.navigation__button--close .navigation__button--icon {
+  background-color: transparent;
+}
+
+.navigation__button--close .navigation__button--icon::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+
+.navigation__button--close .navigation__button--icon::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+}
+
+.mobile__nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 100%;
+  background-color: #0b1d26b5;
+  padding: 70px 70px 50px 30px;
+  display: none;
+}
+
+.mobile__nav .navigation__item,
+.mobile__nav .navigation__account {
+  display: block;
+}
+
+.mobile__nav .navigation__item ul,
+.mobile__nav .navigation__account {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobile__nav .navigation__item ul li,
+.mobile__nav .navigation__account {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
 }
 
 /* ================= HERO==================== */
@@ -225,6 +313,8 @@ body {
   max-width: 632px;
   margin-left: 150px;
   margin-right: 114px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .content__title--small {
@@ -321,12 +411,15 @@ body {
 }
 
 .content__img {
+  width: 566px;
+  height: 720px;
   width: 100%;
 }
 
 .content__img img {
-  max-width: 566px;
-  max-height: 720px;
+  width: 100%;
+  min-width: 200px;
+  min-height: 180px;
 }
 
 .container--content {

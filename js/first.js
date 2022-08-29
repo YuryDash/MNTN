@@ -1,5 +1,8 @@
-const button = document.querySelector('.button');
+const navBtn = document.querySelector('.navigation__button--mobile');
 
-button.onclick = function() {
-    console.log( 'Клик!' );
-}
+const mobileNav = document.querySelector('.mobile__nav');
+
+navBtn.addEventListener('click', function () {
+    mobileNav.classList.toggle('mobile__nav--active');
+    navBtn.classList.toggle('navigation__button--close');
+})
