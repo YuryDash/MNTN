@@ -1,6 +1,4 @@
-.footer, .navigation, .hero{
-    display: none;
-}
+
 
 @media (max-width: 1200px) {
     .hero__title{
@@ -9,8 +7,8 @@
 }
 
 @media (max-width: 800px) {
-    .navigation__item, .navigation__account, .footer{
-
+    .navigation__item, .navigation__account{
+        display: none;
     }
 
     .navigation__button--mobile{
